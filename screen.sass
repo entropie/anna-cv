@@ -1,0 +1,133 @@
+//$backgroundColor: rgb(237, 248, 255)
+$backgroundColor: rgb(214, 200, 222)
+$backgroundColor: rgb(227, 225, 220)
+$foregroundColor: rgb(10, 10, 10)
+$highlightColor: rgb(209, 84, 0)
+$sideWidth: 300px
+$maxWidth: 960px
+
+@mixin noSpace
+  margin: 0
+  padding: 0
+
+html
+  @include noSpace
+
+body
+  background-color: $backgroundColor
+  color: $foregroundColor
+  @include noSpace
+  font-size: 23px
+  font-family: 'Roboto', sans-serif
+  margin-bottom: 50px
+
+
+a
+  text-decoration: none
+
+#languages
+  text-align: right
+  caption
+    color: $highlightColor
+    font-size: 1em
+    padding-bottom: 10px
+  th
+    text-align: right
+    font-size: .7em
+
+  td
+    text-align: left
+    font-size: .7em
+
+footer
+  color: darken($backgroundColor, 30)
+  font-size: 18px
+  text-align: center
+  margin-top: 80px
+
+header
+  max-width: $maxWidth
+
+  @include noSpace
+  margin: 0 auto
+  padding: 42px
+  padding-left: 0
+  padding-right: 0
+
+  .plot
+    text-align: center
+    font-size: .8em
+
+h1
+  text-align: center
+  color: $highlightColor
+  @include noSpace
+  span
+    display: block
+    font-size: 0.5em
+    color: $foregroundColor
+  small
+    display: block
+    font-size: 0.4em
+    font-style: italic
+    color: $foregroundColor
+  strong
+    font-style: normal
+    font-size: 1.5em
+    letter-spacing: 4px
+    
+
+h2
+  color: $highlightColor
+  @include noSpace
+  text-align: center
+  padding: 20px
+  letter-spacing: 2px
+    
+.container
+  display: flex
+  align-items: stretch
+  height: 100%
+  max-width: $maxWidth
+  margin: 0 auto
+
+aside
+  width: $sideWidth
+  background-color: darken($backgroundColor, 1)
+  text-align: right
+  padding: 20px
+  .img
+    margin-top: 20px
+    img
+      width: $sideWidth - (20px * 2)
+      border-radius: 10px
+      opacity: .7
+  address
+    font-size: 20px
+    font-style: normal
+    .phone
+      margin-top: 20px
+
+
+  p
+    font-size: 18px
+
+main
+  max-width: $maxWidth - $sideWidth
+  background-color: darken($backgroundColor, 2)
+  padding: 20px
+  padding-bottom: 0
+  table
+    font-size: 20px
+    th, td
+      border-bottom: 1px solid darken($backgroundColor, 10)
+      padding: 20px
+    th
+      padding: 5px
+    th
+      font-weight: normal
+      white-space: nowrap
+      text-align: right
+      color: $highlightColor
+      .still
+        border-bottom: 1px solid $highlightColor
