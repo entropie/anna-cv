@@ -2,8 +2,8 @@
 
 %head
   %title Anna Pietschmann
-
-  %link{:charset => "utf-8", :href => "./screen.css", :media => "screen", :rel => "stylesheet", :type => "text/css" }
+  %base{href: "."}
+  %link{:charset => "utf-8", :href => "./screen.css", :media => "all", :rel => "stylesheet", :type => "text/css" }
   %link{href: "https://fonts.googleapis.com/css?family=Roboto&display=swap", rel: "stylesheet"}
   %meta{charset: "utf-8"}
 
@@ -32,91 +32,83 @@
           %a{href: "tel:+491782062846"} &phone; 0178 2062846
         .email
           %a{href: "mailto:apietschm@gmail.com"} &#9993; apietschm@gmail.com
+        .addendum
+          Geboren 16. September 1987 in Dresden
+
 
 
       .img
         %img{src: "img/anna-pietschmann.jpg"}
 
 
-      .addendum
-        %p Geboren 16. September 1987 in Dresden
       #languages
-
-        %table
-          %caption
-            Sprachkentnisse
-          %tr
-            %th Englisch
-            %td verhandlungsssicher
-          %tr
-            %th Portugiesisch
-            %td konversationssicher
+        %h3 Sprachkentnisse
+        %dl
+          %dt Englisch
+          %dd verhandlungsssicher
+          %dt Portugiesisch
+          %dd konversationssicher
 
         
 
     %main
-      %h2 Ausbildung
+      .main-block
+        %h2 Ausbildung
 
-      %table
+        %table
 
-        %tr
-          %th 2003 - 2006
-          %td Jungstudentin in den Fächern Klavier und Korrepetition an der Hochschule für Musik und Theater Felix Mendelssohn Bartholdy
+          %tr
+            %th 2003 - 2006
+            %td Jungstudentin in den Fächern Klavier und Korrepetition an der Hochschule für Musik und Theater Felix Mendelssohn Bartholdy
 
-        %tr
-          %th 2007
-          %td Abitur, Thomasschule zu Leipzig
+          %tr
+            %th 2007
+            %td Abitur, Thomasschule zu Leipzig
 
+          %tr
+            %th 2007 - 2009
+            %td Cursinho/Vestibuar UFPR Curitiba – Parana Brasilien
 
-        %tr
-          %th 2007 - 2009
-          %td Cursinho/Vestibuar UFPR Curitiba – Parana Brasilien
+          %tr
+            %th 2010 - 2014
+            %td Studium Deutsch als Fremdsprache Universität Leipzig
 
-
-        %tr
-          %th 2010 - 2014
-          %td Studium Deutsch als Fremdsprache Universität Leipzig
-
-
-        %tr
-          %th
-            .still 2014 - heute
-          %td Studium Psychologie Fernuniversität Hagen
+          %tr
+            %th
+              .still 2014 - heute
+            %td Studium Psychologie Fernuniversität Hagen
 
 
+      .main-block
+        %h2 Beruflicher Werdegang
 
-      %h2 Beruflicher Werdegang
+        %table
+          %tr
+            %th 2012 - 2018
+            %td organisatorische Unterstützung des Verbandes deutscher Musikschulen- Landesverband Sachsen e.V. bei der Durchführung der Regionalwettbewerbe von Jugend Musiziert
+          %tr
+            %th
+              .still 2014 - heute
+            %td Trainerin für Mensch mit Hund, Tierschutzarbeit, Dog Walking und Dozentinnentätigkeit auf Seminaren zum Thema Gefahrenprävention im Umgang mit gefährlichen Hunden
 
-      %table
-        %tr
-          %th 2012 - 2018
-          %td organisatorische Unterstützung des Verbandes deutscher Musikschulen- Landesverband Sachsen e.V. bei der Durchführung der Regionalwettbewerbe von Jugend Musiziert
+          %tr
+            %th
+              .still 2014 - heute
+            %td
+              Schreiben für unabhängigen, auf Hunde fokussierten Wissenschaftsblog 
+              %a{href: "http://fluffology.de"} fluffology.de
+              (derzeit 10 000 Besucher pro Monat) 
 
-        %tr
-          %th
-            .still 2014 - heute
-          %td Trainerin für Mensch mit Hund, Tierschutzarbeit, Dog Walking und Dozentinnentätigkeit auf Seminaren zum Thema Gefahrenprävention im Umgang mit gefährlichen Hunden
+          %tr
+            %th 2017
+            %td studentische Assistenz im Max Planck Institut für evolutionäre Anthropologie-Studien zur Kooperation von Wölfen im Vergleich zu Hunden
 
-
-        %tr
-          %th
-            .still 2014 - heute
-          %td
-            Schreiben für unabhängigen, auf Hunde fokussierten Wissenschaftsblog 
-            %a{href: "http://fluffology.de"} fluffology.de
-            (derzeit 10 000 Besucher pro Monat) 
-
-
-        %tr
-          %th 2017
-          %td studentische Assistenz im Max Planck Institut für evolutionäre Anthropologie-Studien zur Kooperation von Wölfen im Vergleich zu Hunden
-
-        %tr
-          %th 2018
-          %td studentische Assistenz im Max Planck Institut für evolutionäre Anthropologie -Studien zu conformity bias bei Primaten
+          %tr
+            %th 2018
+            %td studentische Assistenz im Max Planck Institut für evolutionäre Anthropologie -Studien zu conformity bias bei Primaten
 
 
   %footer
     Stand: 
-    %strong 14.02.2020
+    %strong 27.02.2020
 
