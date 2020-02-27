@@ -75,6 +75,11 @@ footer
   font-size: 18px
   text-align: center
   margin-top: 80px
+  @include print
+    font-size: 5pt
+    text-align: right
+    i
+      font-size: 5pt
 
 header
   max-width: $maxWidth
@@ -162,6 +167,10 @@ aside
     font-size: 20px
     font-style: normal
     width: 100%
+    .strong
+      font-size: 1.1em
+      @include print
+        font-size: 11pt
     .phone
       margin-top: 20px
     .phone,.email
