@@ -192,7 +192,6 @@ aside
 
 main
   background-color: darken($backgroundColor, 3)
-  padding: 20px
   padding-bottom: 0
   @include print
     flex-basis: 60%
@@ -206,9 +205,13 @@ main
       border-bottom: 1px solid darken($backgroundColor, 10)
       &:last-child
         border-bottom: none
+      &.highlight
+        background-color: rgba(50, 50, 50, 0.05)
     td
       padding: 20px
     th
+      padding-left: 10px
+      padding-right: 10px
       font-weight: normal
       white-space: nowrap
       text-align: right
