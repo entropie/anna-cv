@@ -8,7 +8,7 @@ MOCK = false
 TARGET = if MOCK
            "/tmp/cv"
          else
-           "/home/habitats/fluffology/current/quarters/fluffology/public/cv"
+           "/home/ha2itats/snobdog/current/media/public/data/cv"
          end
 
 
@@ -27,4 +27,3 @@ end
 
 run("ssh #{SERVER} 'rm -rf #{TARGET}'")
 rcopy(File.expand_path(File.dirname(__FILE__)))
-
